@@ -1,0 +1,67 @@
+/* Gestion des formulaires d'authentification (Signup et Login) */
+
+.card-position {
+  display: flex;
+  justify-content: center;
+}
+
+.card-form {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 400px;
+}
+
+.card-delete {
+  display: flex;
+  width: 300px;
+}
+
+.email {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #727272;
+  background-color: #e6effd;
+}
+
+#password {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #727272;
+  background-color: #e6effd;
+}
+
+.form-modif {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 280px;
+  border: 1px solid #727272;
+  background-color: rgb(253, 239, 239);
+}
+
+.submit-button {
+  color: white;
+  background-color: #3f4aaa;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+}
+
+.passwordError {
+  color: rgb(200, 76, 76);
+}

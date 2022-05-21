@@ -1,3 +1,11 @@
+body {
+  background-color: #f1f4fa;
+  font-family: sans-serif;
+}
+
+
+/*
+// Modèle React d'origine
 .App {
   text-align: center;
 }
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+*/

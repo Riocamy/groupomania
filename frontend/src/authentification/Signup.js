@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-// Mise en forme du CSS à créer et importer ici
 import swal from "sweetalert";
+import '../styles/Auth.css';
 
 // Fonction pour mettre en place le formulaire d'inscription
 function Signup() { 

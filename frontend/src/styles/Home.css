@@ -1,0 +1,30 @@
+/* Homepage */
+  
+.logo-profile {
+  position: absolute;
+  margin-left: 5%;
+  top: -40px;
+  left: -20px;
+}
+
+.log {
+  margin-top: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.active:hover {
+  color: rgb(56, 59, 245);
+}
+
+#register {
+  padding-right: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#login {
+  cursor: pointer;
+  font-weight: bold;
+}

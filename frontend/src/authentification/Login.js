@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import '../styles/Auth.css';
 
 // Utilisation de la classe LoginForm pour mettre en place le formulaire de connexion
 class LoginForm extends Component {
