@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // Mise en forme du CSS à créer et importer ici
 import swal from "sweetalert";
 
+// Fonction pour mettre en place le formulaire d'inscription
 function Signup() { 
   
   // Schéma d'inscription
@@ -10,7 +11,7 @@ function Signup() {
   const [pseudo, setPseudo] = useState("");
   const [password, setPassword] = useState("");
 
-  // Fonction pour pour enregistrer son profil
+  // Fonction pour enregistrer son profil
   const submitHandler = (e) => {
     e.preventDefault();
 
