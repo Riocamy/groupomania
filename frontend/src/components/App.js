@@ -1,7 +1,7 @@
 //import logo from '../logo.svg';
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-//import Profil from "../pages/Private";
+import Profil from "../pages/Private";
 import '../styles/App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/profil/:id" element={<Profil />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,206 @@
+/* Gestion des formulaires d'authentification (Signup et Login) */
+
+.card-position {
+  display: flex;
+  justify-content: center;
+}
+
+.card-form {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 400px;
+}
+
+.card-delete {
+  display: flex;
+  width: 300px;
+}
+
+.email {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #727272;
+  background-color: #e6effd;
+}
+
+#password {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #727272;
+  background-color: #e6effd;
+}
+
+.form-modif {
+  font-size: 17px;
+  border-radius: 6px;
+  padding: 14px 16px;
+  width: 280px;
+  border: 1px solid #727272;
+  background-color: rgb(253, 239, 239);
+}
+
+.submit-button {
+  color: white;
+  background-color: #3f4aaa;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+}
+
+.passwordError {
+  color: rgb(200, 76, 76);
+}
+
+/* Gestion du profil avec image */
+  
+.profile-card {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 400px;
+}
+
+#img-profile {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.info-profile {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.icon-camera {
+  position: absolute;
+  right: 28%;
+  top: 34%;
+  cursor: pointer;
+}
+/* Bouton logout */
+
+#logout {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  top: 20px;
+  right: 40px;
+}
+
+#modifier {
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100px;
+  height: 50px;
+}
+
+.btn-profil {
+  background-color: rgb(209, 209, 214);
+  margin-left: 30px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100px;
+  height: 50px;
+}
+
+.btn-profil:hover {
+  background-color: rgb(240, 196, 196);
+}
+
+.delete-button {
+  color: white;
+  background-color: #e96161;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+}
+
+.err-update{
+  color: rgb(197, 64, 64);
+}
+
+/* New post bar style */
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.message-perso {
+  color: #969ca1;
+  cursor: pointer;
+}
+.message-perso:hover {
+  color: #111;
+}
+
+#new-post {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #dbdbdb;
+  background-color: #e6effd;
+}
+
+.main-post {
+  display: flex;
+  justify-content: center;
+}
+
+.post-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 8px;
+  width: 80%;
+}
+
+.new-post {
+  border-radius: 4px;
+  margin-left: 30px;
+  width: 90%;
+  background-color: #f9f9fa;
+  border: 1px solid #dbdbdb;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #111;
+}
