@@ -22,7 +22,7 @@ function Home() {
     }
   };
 
-  // Création de la homepage dans le DOM
+  // Intégration de la homepage dans le DOM
   return (
     <div className="connection-form">
       <img className="logo-profile" src={Logo} alt="logo groupomania"></img>
