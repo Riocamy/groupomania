@@ -1,6 +1,7 @@
 //import logo from '../logo.svg';
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
+//import Profil from "../pages/Private";
 import '../styles/App.css';
 
 function App() {
