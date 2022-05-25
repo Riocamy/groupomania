@@ -13,7 +13,7 @@ class UploadImg extends Component {
     this.setState({ file: file });
   }
 
-  // Fonction pour modifier l'image de profil
+  // Fonction pour télécharger l'image de profil
   handleUpload(e) {
     const auth = Cookies.get("Token");
     const file = this.state.file;
@@ -21,6 +21,7 @@ class UploadImg extends Component {
     let formdata = new FormData();
 
     formdata.append("image", file);
+
     axios({
       url: `http://localhost:8080/api/user/image/${id}`,
       method: "POST",

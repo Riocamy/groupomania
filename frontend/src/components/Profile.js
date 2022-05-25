@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UploadImg from "../components/UpdateImg";
+import UploadImg from "./UploadImg";
 import Update from "../components/Update";
 import Delete from "../components/Delete";
 import axios from "axios";
