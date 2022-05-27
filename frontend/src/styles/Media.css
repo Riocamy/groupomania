@@ -1,0 +1,67 @@
+ /* responssive  pour page home */
+
+@media screen and  (max-width: 768px) {
+  body {
+    width: auto;
+  }
+.card-form{
+width: 100%;
+}
+
+.email{
+width: 70%;
+}
+
+#password{
+width: 70%;
+}
+
+.submit-button {
+
+width: 70%;
+}
+
+.log{
+margin-top: 100px;
+}
+
+.logo-profile{
+z-index: -10;
+left: 0;
+}
+
+/* Profil responsive */
+
+.profile-card{
+margin: 80px 0 0;
+}
+
+/* main responsive */
+
+.card-position-main {
+width : 100%;
+}
+
+.card-body{
+width : auto;
+}
+
+.form-group-input {
+width:50%;
+}
+input[type='file'] { color: transparent; }
+
+.card-new-com{
+  text-align: center;
+  align-items: center;
+  background-color: rgb(231, 120, 120);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+  margin-top: 5px;
+}
+  
+}

@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Private from "../pages/Private";
 import Feed from "../pages/Feed";
 import '../styles/App.css';
+import '../styles/Media.css'; //styles responsive
 
 function App() {
   return (
