@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import "../App.css";
+import '../styles/Home.css'
 
 function Like(props) {
   const [style, setStyle] = useState(null);
