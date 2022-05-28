@@ -1,10 +1,12 @@
-// importer des packages nécessaires à la mise en place du serveur
+// Import des packages nécessaires à la mise en place du serveur
 const http = require('http');
 const app = require('./app');
 const dotenv = require("dotenv");
+
+// Utilisation du fichier .env
 require('dotenv').config();
 
-// Fonction pour s'assurer que le port fourni est  de type number
+// Fonction pour s'assurer que le port iniqué est de type number
 const normalizePort = val => {
     const port = parseInt(val, 10);
 
