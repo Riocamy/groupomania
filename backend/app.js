@@ -1,6 +1,9 @@
 // Import des packages nécessaires à la création de l'API
 const express = require('express');
 
+// Import des routes
+//const userRoutes = require('./routes/user');
+
 // Utilisation du framework Express
 const app = express();
 
@@ -14,5 +17,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   next();
 });
+
+// Mise en place des routes
+//app.use('/api/user', userRoutes);
 
 module.exports = app;

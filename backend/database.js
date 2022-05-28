@@ -1,10 +1,11 @@
 // Import mysql
 const mysql = require("mysql")
 
-// Configuration du serveur mysql
+// Configuration de la base de données mysql
 const database = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
+  host : 'localhost',
+  user : 'root',
+  password : "S5efp!omRq!geJ9D",
   database : "groupomania"
 });    
 
