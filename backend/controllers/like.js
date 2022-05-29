@@ -1,4 +1,4 @@
-const dbc = require("../server/database");
+const dbc = require("../database");
 const db = dbc.getDB();
 
 // Ajout d'un like
