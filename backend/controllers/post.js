@@ -1,3 +1,4 @@
+// Import de la base de données
 const dbc = require("../database");
 const db = dbc.getDB();
 
@@ -43,7 +44,7 @@ exports.publish = (req, res, next) => {
   }
 };
 
-// Supression d'un post
+// Suppression d'un post
 exports.deletePublish = (req, res, next) => {
   let post_id = req.params.idPost;
   let id_user = req.params.id;
