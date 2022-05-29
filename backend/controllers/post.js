@@ -2,7 +2,7 @@
 const dbc = require("../database");
 const db = dbc.getDB();
 
-// Publication d'un post
+// Controller pour la publication d'un post
 exports.publish = (req, res, next) => {
   if (req.file) { // Publication avec une image
     const user_id = req.params.id;
@@ -44,7 +44,7 @@ exports.publish = (req, res, next) => {
   }
 };
 
-// Suppression d'un post
+// Controller pour la suppression d'un post
 exports.deletePublish = (req, res, next) => {
   let post_id = req.params.idPost;
   let id_user = req.params.id;
@@ -77,7 +77,7 @@ exports.deletePublish = (req, res, next) => {
   })
 };
 
-// Affichage de tous les posts (fil d'actualité)
+// Controller pour l'affichage de tous les posts (fil d'actualité)
 exports.allPublish = (req, res, next) => {
   const sqlAll = `SELECT post.user_id AS user_id, post.message AS message, post.image AS image, post.id AS id, post.name_poster AS name_poster, post.date AS date FROM post ORDER BY date DESC `
   db.query(sqlAll, (err, result) => {

@@ -2,7 +2,7 @@
 const dbc = require("../database");
 const db = dbc.getDB();
 
-// Affichage du commentaire
+// Controller pour l'affichage du commentaire
 exports.comment = (req, res, next) => {
   const user_id = req.params.id;
   const name = req.body.data.pseudo;
@@ -23,7 +23,7 @@ exports.comment = (req, res, next) => {
   });
 }
 
-// Suppression d'un comentaire 
+// Controller pour la suppression d'un comentaire 
 exports.delete = (req, res, next) => {
   let com_id = req.params.idCom;
   let user_id = req.params.id;
@@ -56,7 +56,7 @@ exports.delete = (req, res, next) => {
   })
 }
 
-// Affichage de tous les commentaires
+// Controller pour l'affichage de tous les commentaires
 exports.allComment = (req, res, next) => {
   const sqlAll = `SELECT comment.id_com AS id_com,comment.user_id AS u_id,comment.message AS message_com, user_name,post_id FROM comment JOIN post ON (post.id = comment.post_id) WHERE post_id ORDER BY date DESC`
   db.query(sqlAll, (err, result) => {
