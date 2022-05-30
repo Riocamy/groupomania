@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import DeleteCom from "../social/DeleteCom";
-import Like from "../social/Like";
-import Comments from "./Comments";
 import { formatDistance, subDays } from "date-fns";
-import AllCom from "../social/AllCom";
+import DeleteCom from "./DeleteCom";
+import Like from "./Like";
+import Comments from "./Comments";
+import AllCom from "./AllCom";
 
 //Fonction pour un post
 function Post({ post, refreshPosts }) {
@@ -23,7 +23,7 @@ function Post({ post, refreshPosts }) {
       <div className="card-post">
         <div className="header-card">
           <Stack direction="row" spacing={2}>
-            <Avatar alt={post.name_poster} src="./logos/avatar.jpg" />
+            <Avatar alt={post.name_poster} src="./assets/avatar.jpg" />
           </Stack>
 
           <a className="pseudo" >

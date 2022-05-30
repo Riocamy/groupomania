@@ -3,7 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import FormInputs from "../social/FormInputs";
 import React, { useState } from "react";
 
-function NewPost(props) {
+export default function Post(props) {
   const [newPostModal, setUpPostModal] = useState(false);
   const newPseudo = localStorage.getItem("pseudo");
   const pseudo = newPseudo.replace(/"/g, "");
@@ -23,7 +23,7 @@ function NewPost(props) {
     <div className="main-post">
       <div className="post-bar-container">
         <Stack direction="row" spacing={2}>
-          <Avatar alt={pseudo} src="./logos/avatar.jpg" />
+          <Avatar alt={pseudo} src="./assets/avatar.jpg" />
         </Stack>
         <p className="message-perso" onClick={handleModals}>
           {" "}
@@ -37,5 +37,3 @@ function NewPost(props) {
     </div>
   );
 }
-
-export default NewPost;

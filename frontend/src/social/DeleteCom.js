@@ -20,7 +20,7 @@ function DeleteCom(props) {
         },
       })
       .then((response) => {
-        window.location = `/main/${id}`;
+        window.location = `/accueil/${id}`;
       })
       .catch((err) => {
         console.log(err);

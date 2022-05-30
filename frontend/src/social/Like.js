@@ -3,7 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import '../styles/Home.css'
 
-function Like(props) {
+const App = (props) => {
   const [style, setStyle] = useState(null);
   const [likeNum, setLikeNum] = useState([]);
 
@@ -111,4 +111,4 @@ function Like(props) {
     </>
   );
 }
-export default Like;
+export default App;

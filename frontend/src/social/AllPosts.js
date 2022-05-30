@@ -3,7 +3,7 @@ import axios from "axios";
 import Post from "./Post";
 
 // Fonction pour afficher tous les posts
-function Allposts() {
+function AllPosts() {
   const [posts, setPosts] = useState([]);
   const getPosts = () => {
     axios
@@ -34,4 +34,4 @@ function Allposts() {
   );
 }
 
-export default Allposts;
+export default AllPosts;
