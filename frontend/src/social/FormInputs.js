@@ -53,13 +53,13 @@ class FormInputs extends Component {
       },
       data: formdata,
     }).then((res) => {
-      window.location = `/main/${id}`;
+      window.location = `/accueil/${id}`;
     });
   };
 
   toggle() {
     const id = localStorage.getItem("id");
-    window.location = `/main/${id}`;
+    window.location = `/accueil/${id}`;
   }
 
   // Intégration du formulaire de publication dans le DOM

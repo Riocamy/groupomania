@@ -19,7 +19,7 @@ function Private() {
     if (e.target.id === "home-btn") {
       const newId = localStorage.getItem("id");
       const id = newId.replace(/"/g, "");
-      navigate(`/main/${id}`);
+      navigate(`/accueil/${id}`);
     } else if (e.target.id === "logout") {
       setLogOutModal(true);
       handleRemoveCookie();

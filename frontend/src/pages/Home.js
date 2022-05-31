@@ -7,8 +7,7 @@ import '../styles/Home.css'
 
 
 // Fonction pour mettre en place la homepage
-function Home() {
-  
+export default function Profil() {
   const [signUpModal, setSignUpModal] = useState(false);
   const [signInModal, setSignInModal] = useState(true);
 
@@ -44,5 +43,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

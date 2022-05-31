@@ -1,4 +1,4 @@
- /* responssive  pour page home */
+ /* Responsive  pour page home */
 
 @media screen and  (max-width: 768px) {
   body {
@@ -36,7 +36,7 @@ left: 0;
 margin: 80px 0 0;
 }
 
-/* main responsive */
+/* Accueil responsive */
 
 .card-position-main {
 width : 100%;

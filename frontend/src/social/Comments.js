@@ -44,7 +44,7 @@ function Comments (props) {
         data: newObj,
       })
       .then((res) => {
-        window.location = `/main/${idUser}`;
+        window.location = `/accueil/${idUser}`;
         return console.log(res.data);
       })
       .catch((err) => {
