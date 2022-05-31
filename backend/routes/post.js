@@ -14,6 +14,6 @@ router.delete('/delete/:idPost/:id', auth, postCtrl.deletePublish);
 router.get("/", likeCtrl.numberlike);
 router.get("/:id", likeCtrl.selectLike);
 router.post('/:id', likeCtrl.like);
-router.delete('/deletelike/:id/:postId', likeCtrl.dislike);
+router.delete('/deletelike/:id/:postId', auth, likeCtrl.dislike);
 
 module.exports = router;
