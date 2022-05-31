@@ -26,12 +26,12 @@ module.exports = (req, res, next) => {
           }
         });
       } else {
-        throw ('Unauthorized request!');
+        throw ('Unauthorized request!!!');
       }
     }
   } catch (error) {
-    res.status(400).json({
-      error: error
-    });
+      res.status(400).json({
+          error: error
+      });
   }
 };

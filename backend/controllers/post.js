@@ -12,7 +12,7 @@ exports.publish = (req, res, next) => {
     
     let sqlPublish = `INSERT INTO post ( user_id, message, name_poster, image ) VALUES ( '${user_id}', '${message}', '${name_poster}', '${image}')`;
     
-    db.query(sqlPublish, function(err, res) {
+    db.query(sqlPublish, function(err, result) {
       if (err) {
         return res.status(404).json({
           message: "Publication erreur"
@@ -58,7 +58,7 @@ exports.deletePublish = (req, res, next) => {
     db.query(sqlCheck, (err, result) => {
       if (admin == null && result[0].user_id != id_user) {
         return res.status(404).json({
-          message: "Supression non authorisé"
+          message: "Supression non authorisée"
         });
       } else {
         let sqlDelete = `DELETE FROM post WHERE id='${post_id}'`;
@@ -69,7 +69,7 @@ exports.deletePublish = (req, res, next) => {
             });
           };
           res.status(200).json({
-            message: "Post suprimé"
+            message: "Post supprimé"
           });
         })
       }
@@ -83,7 +83,7 @@ exports.allPublish = (req, res, next) => {
   db.query(sqlAll, (err, result) => {
     if (err) {
       return res.status(404).json({
-        message: "tout les post erreur"
+        message: "tous les posts erreur"
       });
     } else {
       return res.status(200).json(
