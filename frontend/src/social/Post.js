@@ -11,7 +11,6 @@ function Post({ post, refreshPosts }) {
   const [newComModal, setUpComModal] = useState(false);
 
   //Fonction pour un post
-
   const commentModals = (e) => {
     if (e.target.className === "fa fa-comment comment") {
       setUpComModal(true);
@@ -25,7 +24,7 @@ function Post({ post, refreshPosts }) {
       <div className="card-post">
         <div className="header-card">
           <Stack direction="row" spacing={2}>
-            <Avatar alt={post.name_poster} src="./logos/avatar.jpg" />
+            <Avatar alt={post.name_poster} src="../assets/avatar.png" />
           </Stack>
 
           <a className="pseudo" >
