@@ -4,7 +4,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import DeleteCom from "./DeleteCom";
 
-// Fonction pour afficher tout les commentaires
+// Fonction pour afficher tous les commentaires
 function Allcom(props) {
   const [com, setCom] = useState([]);
 
@@ -21,7 +21,7 @@ function Allcom(props) {
 
   const eventsList = com.map((event) => {
     if (props.idPost === event.post_id) {
-      return (
+      return ( // Mise en place du module de commentaires
           <div className="card-com" key={event.id_com}>
             <div className="header-card-com">
               <Stack direction="row" spacing={2}>
@@ -50,7 +50,7 @@ function Allcom(props) {
     }
   });
 
-  // Intégration dans le DOM
+  // Intégration de tous les commentaires dans le DOM
   return <div className="all-com">{eventsList}</div>;
 }
 

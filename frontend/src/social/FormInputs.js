@@ -45,6 +45,7 @@ class FormInputs extends Component {
     formdata.append("message", this.state.message);
     formdata.append("nom", pseudo);
 
+    // Mise en place d'Axios avec la méthode POST pour publier un post
     axios({
       url: `http://localhost:8080/api/post/publish/${id}`,
       method: "POST",

@@ -27,7 +27,7 @@ const App = (props) => {
     refreshLike();
   }, []);
 
-  // Fonction pour ajouter le nombre de like par post
+  // Fonction pour afficher le nombre de like par post
   const numberList = likeNum.map((e) => {
     if (props.idPost.id === e.post_id) {
       return <p key={e.idlike}>{e.Nblike}</p>;
@@ -52,7 +52,7 @@ const App = (props) => {
         let test = resultLike.find((element) => {
           return element.user_id == idUser;
         });
-        if (!test) {
+        if (!test) { // Ajouter un like
           axios
             .post(`http://localhost:8080/api/like/${idUser}`, {
               headers: {
@@ -68,9 +68,8 @@ const App = (props) => {
             .catch((err) => {
               console.log(err);
             });
-
           return setStyle("cont");
-        } else {
+        } else { // Annuler un like
           axios
             .delete(
               `http://localhost:8080/api/like/deletelike/${id}/${idPost}`,

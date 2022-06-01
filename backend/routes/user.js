@@ -14,7 +14,7 @@ const validPass = require('../middlewares/password');
 // Creation des routes utilisateur sécurisées
 router.put('/update/:id', userCtrl.update);
 router.delete('/delete/:id', userCtrl.delete); 
-router.get('/profile/:id',auth, userCtrl.getOneUser);
+router.get('/profile/:id', auth, userCtrl.getOneUser);
 router.post('/image/:id',multer, auth, img.uploadImage);
 router.post('/signup',validEmail, validPass, userCtrl.signup);
 router.post('/login',validEmail, validPass, limitTry.limiter, userCtrl.login);

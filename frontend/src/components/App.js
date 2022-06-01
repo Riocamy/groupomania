@@ -1,4 +1,3 @@
-//import logo from '../logo.svg';
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Private from "../pages/Private";
@@ -6,6 +5,7 @@ import Feed from "../pages/Feed";
 import '../styles/App.css';
 import '../styles/Media.css'; //styles responsive
 
+// Mise en place des routes
 function App() {
   return (
     <div className="App">

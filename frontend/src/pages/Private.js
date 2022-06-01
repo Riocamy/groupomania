@@ -10,11 +10,11 @@ function Private() {
   const navigate = useNavigate();
   const [logoutModal, setLogOutModal] = useState(false);
 
-  // Suppression du cookie Token lorsqu'on se déconnecte
+  // Suppression du Token lorsqu'on se déconnecte
   function handleRemoveCookie() {
     Cookies.remove("Token");
   }
-  // Gestion du logout cookie Token
+  // Gestion du Token pendant la navigation
   const handleModals = (e) => {
     if (e.target.id === "home-btn") {
       const newId = localStorage.getItem("id");

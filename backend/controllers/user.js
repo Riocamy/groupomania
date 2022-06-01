@@ -13,6 +13,7 @@ exports.signup = (req, res, next) => {
       const password = hash
       const email = req.body.email;
       const pseudo = req.body.pseudo;
+      
       let sqlSignup = `INSERT INTO users ( email, pseudo, password ) VALUES ( '${email}', '${pseudo}', '${password}' )`;
 
       db.query(sqlSignup, function(err, result) {

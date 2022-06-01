@@ -4,14 +4,11 @@ const express = require('express');
 // Utilisation du framework Express
 const app = express();
 
-// Import du package body-parser (parse automatiquement les requêtes en JSON)
-const bodyParser = require('body-parser');
-
-// Import de cookie-parser
-const cookieParser = require("cookie-parser");
-
-// Pour mettre en place le chemin d'accès à un fichier téléchargé par l'utilisateur
-const path = require('path');
+// Import des packages
+const bodyParser = require('body-parser'); // parse automatiquement les requêtes en JSON
+const cookieParser = require("cookie-parser"); // parse automatiquement les cookies
+const helmet = require("helmet"); // sécurisation des injections et en-tête http
+const path = require('path'); // met en place le chemin d'accès à un fichier téléchargé par l'utilisateur
 
 // Import des routes
 const userRoutes = require('./routes/user');
@@ -31,15 +28,14 @@ app.use((req, res, next) => {
   next();
 });
 
-// Intégration de body-parser
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Intégration de cookie-parser
-app.use(cookieParser());
-
 // Middleware de téléchargement de fichiers (images des posts)
 app.use('/images', express.static(path.join(__dirname, 'images')));
+
+// Intégration des packages
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(helmet());
 
 /**** Mise en place des routes ****/
 

@@ -166,19 +166,19 @@
   align-items: center;
 }
 
-/* Heart animation  */
+/* Couleur du like  */
 
 .cont {
   color: rgb(204, 66, 66);
 }
 
-/* Imgae update  */
+/* Image update  */
 
 .form-img__img-preview {
   width: 100px;
 }
 
-/* Card comment */
+/* Carte commentaires */
 
 .all-com{
   width: 60%;
@@ -221,7 +221,7 @@
   text-overflow: ellipsis;
 }
 
-/* Like btn */
+/* Bouton Like */
 
 .container-like {
   display: flex;

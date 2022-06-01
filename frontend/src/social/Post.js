@@ -7,10 +7,11 @@ import Like from "./Like";
 import Comments from "./Comments";
 import AllCom from "./AllCom";
 
+// Fonction pour définir la structure d'un post
 function Post({ post, refreshPosts }) {
   const [newComModal, setUpComModal] = useState(false);
 
-  //Fonction pour un post
+  // Possibilité de commenter
   const commentModals = (e) => {
     if (e.target.className === "fa fa-comment comment") {
       setUpComModal(true);
@@ -19,6 +20,7 @@ function Post({ post, refreshPosts }) {
     }
   };
 
+  // Intégration dans le DOM
   return (
     <div className="card-position-main">
       <div className="card-post">

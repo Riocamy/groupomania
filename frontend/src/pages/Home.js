@@ -6,7 +6,7 @@ import Logo from "../assets/icon-left-font-monochrome-black.png";
 import '../styles/Home.css'
 
 
-// Fonction pour mettre en place la homepage
+// Fonction pour mettre en place la homepage (formulaire de connexion)
 export default function Profil() {
   const [signUpModal, setSignUpModal] = useState(false);
   const [signInModal, setSignInModal] = useState(true);

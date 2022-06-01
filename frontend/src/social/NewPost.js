@@ -8,7 +8,7 @@ export default function Post(props) {
   const newPseudo = localStorage.getItem("pseudo");
   const pseudo = newPseudo.replace(/"/g, "");
 
-  // Fonction pour ajouter un nouveau post
+  // Fonction pour publier un nouveau post
   const handleModals = (e) => {
     if (e.target.id === "new-post") {
       setUpPostModal(true);

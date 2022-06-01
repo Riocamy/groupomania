@@ -31,7 +31,7 @@ class LoginForm extends Component {
         localStorage.setItem("pseudo", JSON.stringify(pseudo));
         localStorage.setItem("id", JSON.stringify(id));
         window.location = `/profil/${id}`;
-        // Stockage du token pour vérifier que c'est le bon utilisateur
+        // Stockage du token pour maintenir la connexion
         Cookies.set("Token", response.data.token, { expires: 1 });
       })
       .catch((err) => {
@@ -40,7 +40,7 @@ class LoginForm extends Component {
       });
   };
 
-  // Création du formulaire de connexion dans le DOM
+  // Intégration du formulaire de connexion dans le DOM
   render() {
     const { email, password } = this.state;
     return (

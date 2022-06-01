@@ -14,6 +14,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Cookies from "js-cookie";
 
+// Style de la barre de navigation
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -44,7 +45,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
@@ -54,6 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+// Features de la barre de navigation
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -74,6 +75,7 @@ export default function PrimarySearchAppBar() {
     handleMobileMenuClose();
   };
 
+  // Accès au profil
   const handleMenuClick = () => {
     const id = localStorage.getItem("id");
     setAnchorEl(
@@ -81,10 +83,12 @@ export default function PrimarySearchAppBar() {
     handleMobileMenuClose();
   };
 
+  // Fonction pour supprimer le cookie à la déconnexion
   function handleRemoveCookie() {
     Cookies.remove("Token");
   }
 
+  // Fonction pour se déconnecter
   const handleMenuLogout = () => {
     setAnchorEl(
     window.location = `/`);
@@ -96,6 +100,7 @@ export default function PrimarySearchAppBar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  // Intégration dans le DOM
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu

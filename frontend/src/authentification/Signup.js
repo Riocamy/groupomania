@@ -5,7 +5,6 @@ import '../styles/Auth.css';
 
 // Fonction pour mettre en place le formulaire d'inscription
 function Signup() { 
-  
   // Schéma d'inscription
   const [email, setEmail] = useState("");
   const [pseudo, setPseudo] = useState("");
@@ -34,7 +33,7 @@ function Signup() {
     }
   };
 
-  // Création du formulaire d'inscription dans le DOM
+  // Intégration du formulaire d'inscription dans le DOM
   return (
     <div className="card-position">
       <form className="card-form" onSubmit={submitHandler}>
