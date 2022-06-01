@@ -63,6 +63,8 @@ mysql -u root -p groupomania < /Utilisateurs/sebastien/Bureau/datas.sql
 
 Entrez votre mot de passe.
 
+Si nécessaire, rendez-vous dans le fichier "database.js" du backend et remplacez le mot de passe par le votre.
+
 **Compte administrateur**
 
 Un compte administrateur a été crée à l'adresse de la chargée de communication de Groupomania et prêt à l'emploi, vous trouverez les identifiants dans le fichier "adminitrateur-login.txt".
